@@ -2,18 +2,17 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width-device-width,initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Log In</title>
         <link rel="stylesheet" href="login.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body>
         <div id="nav-con">
-            <img class="logo" src="CNlogoonly.png">
+            <img class="logo" src="CNlogoonly.png" alt="Logo">
             <h3 class="comname">
                 COMPASS NORTH LAND SURVEYING SERVICES
             </h3>
-    
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
@@ -24,26 +23,22 @@
                 <li><a href="#login" class="active">LOG IN</a></li>
             </ul>
         </div>
-
-        <section class= "home">
-            <div class= "container">
-                <p class= "login-mess">
-                    <span class= "login-wel">Welcome to Compass North!</span><br>
-                    <br>
-                    Your trusted partner in land surveying and property services.<br>
-                    <br>
+        <section class="home">
+            <div class="container">
+                <p class="login-mess">
+                    <span class="login-wel">Welcome to Compass North!</span><br><br>
+                    Your trusted partner in land surveying and property services.<br><br>
                     Log in to access project updates, secure your property, and explore valuable resources for your peace of mind.
                 </p>
-        
                 <div class="wrapper">
-                    <form action="">
+                    <form action="login.php" method="POST">
                         <h1>Login</h1>
                         <div class="input-box">
-                            <input type="text" placeholder="Username" required>
+                            <input type="text" placeholder="Username" name="username" required>
                             <i class='bx bx-user'></i>
                         </div>
                         <div class="input-box">
-                            <input type="password" placeholder="Password" required>
+                            <input type="password" placeholder="Password" name="password" required>
                             <i class='bx bx-lock-alt'></i>
                         </div>
                         <div class="remember-forgot">
@@ -58,14 +53,12 @@
                 </div>
             </div>
         </section>
-        
         <div class="footer">
             <div>
                 <p class="paragraph-2">
-                Copyright 2024 Compass North. All Rights Reserved
+                    Copyright 2024 Compass North. All Rights Reserved
                 </p>
             </div>
         </div>
-
     </body>
 </html>

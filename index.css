@@ -116,16 +116,37 @@ span.home-head{
 }
 
 .home-par{
+    margin: 0 auto;
+    position: relative;
     color: #e0e8e2;
+    display: flex;
+    flex-direction: column;
     background-color: rgba(0, 0, 0, 0.4);
     font-family: "Merriweather" , sans-serif;
     font-weight: bold;
-    text-align: center;
+    text-align: right;
     letter-spacing: 2px;
     padding: 30px;
     border-radius: 20px;
     margin-bottom: 50px;
-    size: 30px;
+    font-size: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: 0%;
+    
+}
+.read-more{
+    margin-top: 20px;
+    text-align: right;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+.hidden{
+    display: none;
 }
 
 .rm-button{
@@ -133,11 +154,14 @@ span.home-head{
     color: black;
     background-color: #89c07e;
     padding: 5px;
-    margin-left: 230px;
+    margin-left: 750px;
     border-radius: 5px;
+    margin-top: 20px;
 }
 
-
+.rm-button:hover {
+    text-decoration: underline;
+}
 
 .projects{
     background-image: url("bg3.jpg");
@@ -320,6 +344,10 @@ ol{
     margin: 100px 280px 220px;
     padding: 60px 0 50px;
     display: block;
+    justify-content: center;
+    height: 100vh;
+    margin: 0% auto;
+    
 }
 
 .form-block {
